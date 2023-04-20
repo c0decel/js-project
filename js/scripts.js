@@ -4,4 +4,3 @@ let pokemonlist = [
     {name: 'rapidash', height: 5.7, type: ['fire horse']}];
 
 console.log(pokemonlist);
-document.write(pokemonlist.name);
