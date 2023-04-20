@@ -1,19 +1,7 @@
-let pokemonlist = [];
+let pokemonlist = [
+    {name: 'meouth', height: 1.4, type: ['scratch cat']}, 
+    {name: 'snorlax', height: 2.1, type: ['normal']}, 
+    {name: 'rapidash', height: 5.7, type: ['fire horse']}];
 
-let pokemon_1 = {
-    name: 'snorlax',
-    height: 2.1,
-    type: ['normal']
-};
-
-let pokemon_2 = {
-    name: 'meouth',
-    height: 0.4
-    type: ['normal']
-};
-
-let pokemon_3 = {
-    name: 'kirlia',
-    height: 0.8,
-    type: ['psychic', 'fairy']
-}
+console.log(pokemonlist);
+document.write(pokemonlist.name);
