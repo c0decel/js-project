@@ -26,19 +26,28 @@ let pokemonRepository = (function() {
         pokemonList.push(pokemon);
     }
 
+    function addListItem(pokemon) {
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listPokemon = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = pokemon.name;
+        listPokemon.appendChild(button);
+        pokemonList.appendChild(listPokemon);
+    }
+
     return {
         getAll: getAll,
-        add: add
+        add: add,
+        addListItem: addListItem
     };
-
 })();
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-    if (pokemon.height > 3)
-        document.write(pokemon.name + ' at '+ pokemon.height + 'm is a tall pokemon!' + '<br>')
-    else
-        document.write(pokemon.name + ' - '+ pokemon.height + 'm' + '<br>');
+    pokemonRepository.addListItem(pokemon);
   });
+
+  
+
   
 
 
