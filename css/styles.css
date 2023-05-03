@@ -1,0 +1,50 @@
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+    background-color: #fffdc2;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: #1300e3;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Anton', sans-serif;
+    color: #1300e3;
+    text-align: center;
+}
+
+p {
+    font-family: 'Anton', sans-serif;
+}
+
+a {
+    font-family: 'Anton', sans-serif;
+}
+
+button {
+	border: none;
+  	padding: 10px;
+  	border-radius: 3px;
+  	font-size: 16px;
+    font-family: 'Anton', sans-serif;
+	cursor: pointer;
+    background-color: aqua;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+	opacity: .5;
+}
