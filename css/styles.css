@@ -10,8 +10,7 @@ body {
 h1,
 h2,
 p,
-a,
-button {
+a {
 	font-family: 'Anton', sans-serif;
 }
 
@@ -25,18 +24,18 @@ h2 {
 	text-align: center;
 }
 
-button {
+.btn-primary {
 	border: none;
 	padding: 10px;
 	border-radius: 3px;
 	font-size: 16px;
 	cursor: pointer;
-	background-color: aqua;
+	background-color: #1300e3;
 }
 
 li {
 	list-style-type: none;
-	text-align: center;
+	text-align: left;
 }
 
 button:hover,
@@ -55,7 +54,6 @@ button:focus,
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
-	z-index: 999;
 	overflow: auto;
 	display: none;
 	text-align: center;
@@ -70,15 +68,7 @@ button:focus,
 	width: 100%;
 	max-width: 700px;
 	text-align: center;
-}
-
-.modal-close {
-	float: right;
-	-webkit-appearance: none;
-	border: 0;
-	background: none;
-	color: #777;
-	text-decoration: underline;
+  z-index: 999;
 }
 
 .modal h1 {
