@@ -21,7 +21,7 @@ let pokemonRepository = (function() {
 
     function addListItem(pokemon) {
         let pokemonList = $('.pokemon-list');
-        let listPokemon = $('<li></li>');
+        let listPokemon = $("<div class='grid__item'><p></p></div>");
         let button = $('<button class="btn btn-primary"></button>');
         button.text(pokemon.name);
         button.click(function(event) {
@@ -86,17 +86,6 @@ let pokemonRepository = (function() {
     
         $('#modal-container').modal('show');
     }
-
-    $('.modal-close').click(function() {
-        hideModal();
-      });
-      
-      $(document).keydown(function(e) {
-        if (e.key === 'Escape' && $('#modal-container').hasClass('is-visible')) {
-          hideModal();
-        }
-      });
-      
 
     function showDetails(pokemon) {
         showModal(pokemon)
