@@ -24,7 +24,7 @@ let pokemonRepository = (function() {
         let listPokemon = $('<div class="grid__item"><p></p></div>');
         let button = $('<button class="btn btn-primary"></button>');
         button.text(pokemon.name);
-        button.click(function(event) {
+        button.click(function() {
           showDetails(pokemon);
         });
         listPokemon.append(button);
