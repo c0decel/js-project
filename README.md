@@ -1,9 +1,11 @@
-# js-project
-displays clickable list of pokemon with details. loads from https://pokeapi.co/api/v2/pokemon/ 
+# PokeDex
+## Features
 
-project made with 
-- html
-- css
-- javascript
-- jquery library
+Displays clickable list of pokemon with details. Loads from [PokeDex API.](https://pokeapi.co/api/v2/pokemon/)
+
+## Built with
+- HTML
+- CSS
+- Javascript
+- JQuery library
 
